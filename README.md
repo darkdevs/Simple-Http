@@ -6,7 +6,7 @@ support: pouya.demokri@gmail.com
 site: [Www.Dpouya.com](http://www.dpouya.com)
 
 ## install
-###Main build.gradle
+### Main build.gradle
 ```
 buildscript {
     
@@ -17,7 +17,7 @@ buildscript {
 ```
 ###App build.gradle
 ```
-compile 'com.dpouya:Simple-http-request:0.1.2'
+implementation 'com.dpouya:Simple-http-request:0.1.2'
 ```
 
 ## using
