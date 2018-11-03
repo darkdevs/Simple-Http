@@ -62,6 +62,41 @@ public class getTest extends SimpleHttpCall {
 ```
 
 ### Using:
+#### simple http call
 ```
 new getTest().send();
 ```
+
+### Http call with callback
+```
+public class getCounts extends SimpleHttpCall {
+    public interface OnCountResultInterface{void CountResult(int count);}
+    OnCountResultInterface onResultListener;
+    public getSeriesDetail(int id,onResultListener listener) {
+        Url = "countof.php?id="+id;
+        this.onResultListener=listener;
+
+    }
+
+    @Override
+    protected void OnSuccessJson(JSONObject JsonResponse) {
+        onseriesListener.SeriesDetailRecived(new Series(JsonResponse));
+    }
+
+    @Override
+    protected void OnError(Exception error) {
+        super.OnError(error);
+        //Log error
+    }
+}
+```
+
+#### Using:
+```
+new getCounts(102,new getCounts.OnCountResultInterface() {
+            @Override
+            public void CountResult(int count) {
+                Log.e("Count Result","Count :" + count);
+            }
+        }).send();
+ ```
