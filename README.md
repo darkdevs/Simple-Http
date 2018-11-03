@@ -2,7 +2,7 @@
 Simply make http requests 
 
 ## install
-Main build.gradle
+###Main build.gradle
 ```
 buildscript {
     
@@ -11,9 +11,9 @@ buildscript {
     }
 }
 ```
-App build.gradle
+###App build.gradle
 ```
-compile 'com.dpouya:Simple-http-request:0.1'
+compile 'com.dpouya:Simple-http-request:0.1.2'
 ```
 
 ## using
