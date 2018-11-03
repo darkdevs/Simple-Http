@@ -6,7 +6,7 @@ support: pouya.demokri@gmail.com
 site: [Www.Dpouya.com](http://www.dpouya.com)
 
 ## install
-###Main build.gradle
+### Main build.gradle
 ```
 buildscript {
     
