@@ -29,7 +29,7 @@ public class ApplicationLoader extends Application {
 }
 
 ```
- 
+## simple http call
 ### getTest.java
 ```
 public class getTest extends SimpleHttpCall {
@@ -62,12 +62,12 @@ public class getTest extends SimpleHttpCall {
 ```
 
 ### Using:
-#### simple http call
+
 ```
 new getTest().send();
 ```
 
-### Http call with callback
+## Http call with callback
 ```
 public class getCounts extends SimpleHttpCall {
     public interface OnCountResultInterface{void CountResult(int count);}
