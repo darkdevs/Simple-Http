@@ -1,5 +1,9 @@
 # Simple-Http
-Simply make http requests 
+Simply make http requests with full controll of result and no need to manange threats
+
+support: pouya.demokri@gmail.com
+
+site: [Www.Dpouya.com](http://www.dpouya.com)
 
 ## install
 ###Main build.gradle
