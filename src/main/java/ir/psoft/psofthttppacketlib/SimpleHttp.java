@@ -10,7 +10,7 @@ import com.android.volley.toolbox.Volley;
  * Created by pouyadark on 10/27/18.
  */
 
-public class PsoftHttp extends Application {
+public class SimpleHttp extends Application {
     private static Context context;
     private static String url;
     private static RequestQueue mRequestQueue;
@@ -39,7 +39,7 @@ public class PsoftHttp extends Application {
     }
 
     public static void initiate(Context contextx,String ServerBaseUrl) {
-        PsoftHttp.url = ServerBaseUrl;
+        SimpleHttp.url = ServerBaseUrl;
         context = contextx;
     }
 }

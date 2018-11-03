@@ -5,7 +5,7 @@ publish {
 
     def groupProjectID = 'com.dpouya'
     def artifactProjectID = 'Simple-http-request'
-    def publishVersionID = '0.1'
+    def publishVersionID = '0.1.2'
 
     userOrg = 'darkdevs'
     repoName = 'Simple-Http-Request'

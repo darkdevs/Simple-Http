@@ -5,6 +5,7 @@ import com.android.volley.Request;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
+import com.android.volley.toolbox.Volley;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -23,16 +24,19 @@ import ir.psoft.psofthttppacketlib.Events.OnSuccessJsonArray;
  * Created by pouyadark on 10/28/18.
  */
 
-public class PPacket {
+public class SimpleHttpCall {
+    public static final int POST = StringRequest.Method.POST;
+    public static final int GET = StringRequest.Method.GET;
+
     protected OnSuccess OnSuccessEvent=null;
     protected OnSuccessJson OnSuccessJsonEvent=null;
     protected OnSuccessJsonArray onSuccessJsonArray=null;
     protected OnError OnErrorEvent=null;
     protected String Url=null;
     protected int Method = Request.Method.POST;
-    public void Send(){
+    public void send(){
 
-        String webpath= PsoftHttp.getUrl() + this.Url;
+        String webpath= SimpleHttp.getUrl() + this.Url;
 
         StringRequest strRequest = new StringRequest(Method, webpath,
                 new Response.Listener<String>()
@@ -87,7 +91,7 @@ public class PPacket {
         strRequest.setShouldCache(false);
         strRequest.setTag("search");
 
-        PsoftHttp.getRequestQueue().add(strRequest);
+        SimpleHttp.getRequestQueue().add(strRequest);
         strRequest.setRetryPolicy(new DefaultRetryPolicy(
                 30 * 1000,
                 DefaultRetryPolicy.DEFAULT_MAX_RETRIES,

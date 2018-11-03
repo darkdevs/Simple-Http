@@ -16,7 +16,7 @@ public class Setting {
 
     private static void setupSetting() {
         if(pref==null) {
-            _context = PsoftHttp.getInstance();
+            _context = SimpleHttp.getInstance();
             pref = _context.getSharedPreferences(PREF_NAME, Context.MODE_PRIVATE);
             editor = pref.edit();
         }
