@@ -74,6 +74,7 @@ public class getCounts extends SimpleHttpCall {
     OnCountResultInterface onResultListener;
     public getSeriesDetail(int id,onResultListener listener) {
         Url = "countof.php?id="+id;
+        Method = SimpleHttpCall.GET;
         this.onResultListener=listener;
 
     }
