@@ -85,7 +85,7 @@ public class getCounts extends SimpleHttpCall {
 
     @Override
     protected void OnSuccessJson(JSONObject JsonResponse) {
-        onseriesListener.SeriesDetailRecived(new Series(JsonResponse));
+        onResultListener.CountResult(JsonResponse.getInt("count"));
     }
 
     @Override
