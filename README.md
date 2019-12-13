@@ -20,7 +20,7 @@ buildscript {
 implementation 'com.dpouya:Simple-http-request:0.1.2'
 ```
 
-### Permisos / Permissions
+### Permissions
 Add permissions in `AndroidManifest.xml` file
 
 ```xml
