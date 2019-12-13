@@ -20,6 +20,14 @@ buildscript {
 implementation 'com.dpouya:Simple-http-request:0.1.2'
 ```
 
+### Permisos / Permissions
+Add permissions in `AndroidManifest.xml` file
+
+```xml
+<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+<uses-permission android:name="android.permission.INTERNET"/>
+```
+
 ## using
 ### Application.java
 ```
