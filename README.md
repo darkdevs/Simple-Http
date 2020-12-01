@@ -1,4 +1,7 @@
 # Simple-Http
+
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/a21fa16f6dac4eb5bb808ad47d234bf9)](https://app.codacy.com/gh/darkdevs/Simple-Http?utm_source=github.com&utm_medium=referral&utm_content=darkdevs/Simple-Http&utm_campaign=Badge_Grade)
+
 Simply make http requests with full controll of result and no need to manange threats
 
 support: pouya.demokri@gmail.com
